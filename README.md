@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Rigware.dev-%23000000.svg?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3N2Zz4=" alt="Rigware.dev" />
+  <img src="https://img.shields.io/badge/Riggsware.dev-%23000000.svg?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3N2Zz4=" alt="Rigware.dev" />
 </p>
 
 <p align="center">
@@ -13,9 +13,9 @@
 
 ---
 
-## 👋 hey, i'm didn.t.work
+## 👋 Abel here
 
-I'm a **software engineer at [Rigware.dev](https://rigware.dev)** who drives **Arch Linux** as the daily OS and does everything I can to stay inside the terminal — because honestly, why leave it?
+I'm a **software engineer at [Riggsware.dev](https://rigware.dev)** who drives **Arch Linux** as the daily OS and does everything I can to stay inside the terminal — because honestly, why leave it?
 
 I build **web and app solutions** end to end: from lean SQL and fast runtimes on the backend to clean interactions on the front. When I'm not shipping features, I'm automating the boring parts with Python or playing with systems languages for fun.
 
