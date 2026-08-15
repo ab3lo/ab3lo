@@ -13,7 +13,7 @@
 
 ---
 
-## 👋 hey, i'm didn.t.work
+## 👋 Abel here
 
 I'm a **software engineer at [Rigware.dev](https://rigware.dev)** who drives **Arch Linux** as the daily OS and does everything I can to stay inside the terminal — because honestly, why leave it?
 
@@ -36,14 +36,7 @@ I build **web and app solutions** end to end: from lean SQL and fast runtimes on
 
 ---
 
-## 📈 by the numbers
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=didntwork&show_icons=true&theme=nightowl&hide_title=true" alt="GitHub Stats" height="150"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=didntwork&layout=compact&theme=nightowl" alt="Top Languages" height="150"/>
-</p>
-
----
 
 ## 🗺️ what keeps me busy
 
