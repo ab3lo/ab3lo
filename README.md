@@ -17,7 +17,7 @@
 
 I'm a **software engineer at [Rigware.dev](https://rigware.dev)** who drives **Arch Linux** as the daily OS and does everything I can to stay inside the terminal — because honestly, why leave it?
 
-I build **web and app solutions** end to end: from lean SQL and fast runtimes on the backend to clean interactions on the front. When I'm not shipping features, I'm automating the boring parts with Python or playing with systems languages for fun.
+I build **web and app solutions** end to end: secure and fast runtimes on the backend to clean interactions on the front. When I'm not shipping features, I'm automating the boring parts with Python or playing with systems languages for fun.
 
 ---
 
@@ -43,7 +43,6 @@ I build **web and app solutions** end to end: from lean SQL and fast runtimes on
 - 🧱 **Web dev** — fast, typed APIs and clean frontends
 - 📱 **App dev** — cross-platform, practical, shipping-focused
 - ⚡ **Automation** — Python to kill the repetitive work
-- 🔭 **Systems tinkering** — where the fun is
 
 > *"Stay in the terminal as long as possible."*
 
@@ -55,4 +54,4 @@ I build **web and app solutions** end to end: from lean SQL and fast runtimes on
 - ⌨️ minimal plugins, maximal config
 - 🧹 always refactoring something
 
-Reach me via the usual channels — or just open an issue. Happy hacking. 🚀
+Reach me via the usual channels — or just open an issue.
