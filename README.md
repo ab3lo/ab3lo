@@ -36,22 +36,3 @@ I build **web and app solutions** end to end: secure and fast runtimes on the ba
 
 ---
 
-
-
-## 🗺️ what keeps me busy
-
-- 🧱 **Web dev** — fast, typed APIs and clean frontends
-- 📱 **App dev** — cross-platform, practical, shipping-focused
-- ⚡ **Automation** — Python to kill the repetitive work
-
-> *"Stay in the terminal as long as possible."*
-
----
-
-## ✨ finally
-
-- 🐧 Linux + TUI enthusiast
-- ⌨️ minimal plugins, maximal config
-- 🧹 always refactoring something
-
-Reach me via the usual channels — or just open an issue.
