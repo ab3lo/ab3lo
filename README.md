@@ -15,7 +15,7 @@
 
 ## 👋 Abel here
 
-I'm a **software engineer at who drives **Arch Linux** as the daily OS and does everything I can to stay inside the terminal — because honestly, why leave it?
+I'm a **Ai agentic software engineer** and chronic **Arch Linux** user and does everything I can to stay inside the terminal — because honestly, why leave it?
 
 I build **web and app solutions** : secure and fast runtimes on the backend to clean interactions on the front. When I'm not shipping features, I'm automating the boring parts with Python or playing with systems languages for fun.
 
