@@ -21,7 +21,7 @@ I build **web and app solutions** : secure and fast runtimes on the backend to c
 
 
 
-**Roles:** Nuxt & Svelte for Web · Python for automation · Rust, Zig, Go, C/C++ for play.
+**Roles:** Next & Nuxt for Web  · React Naitve/Kotlin for Mobile · Python for automation · Rust, Zig, Go, C/C++ for play.
 
 ---
 
