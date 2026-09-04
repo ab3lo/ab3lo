@@ -19,8 +19,7 @@ I'm a **Ai agentic software engineer** and chronic **Arch Linux** user and does 
 
 I build **web and app solutions** : secure and fast runtimes on the backend to clean interactions on the front. When I'm not shipping features, I'm automating the boring parts with Python or playing with systems languages for fun.
 
-src="https://img.shields.io/badge/Neovim-57A143?style=flat-square&logo=neovim&logoColor=white" alt="Neovim" /> |
-| 🌐 Hosting | <img src="https://img.shields.io/badge/GitHub_Pages-222222?style=flat-square&logo=github&logoColor=white" alt="GitHub Pages" /> <img src="https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white" alt="Netlify" /> <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare" /> |
+
 
 **Roles:** Nuxt & Svelte for Web · Python for automation · Rust, Zig, Go, C/C++ for play.
 
