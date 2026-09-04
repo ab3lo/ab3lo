@@ -33,7 +33,7 @@ I build **web and app solutions** : secure and fast runtimes on the backend to c
 # 📊 GitHub Stats:
   ![](https://github-readme-stats.shion.dev/api?username=ab3lo&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
   ![](https://streak-stats.demolab.com/?user=ab3lo&theme=dark&hide_border=false)<br/>
-  ![](https://github-readme-stats.shion.dev/api/top-langs/?)      username=ab3lo&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+  ![](https://github-readme-stats.shion.dev/api/top-langs/?username=ab3lo&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 ---
 
