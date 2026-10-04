@@ -36,7 +36,3 @@ I build **web and app solutions** : secure and fast runtimes on the backend to c
 
 ---
 
-<p align="center">
-  <img src="https://api.boot.dev/v1/users/public/d6ea73b9-72f1-4de4-a5d6-68be96073b2a/thumbnail" >
-</p>
-
