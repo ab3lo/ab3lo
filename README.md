@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Rigware.dev-%23000000.svg?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3N2Zz4="  href="https://riggsware.pages.dev" alt="Rigware.dev" />
-</p>
+  <a href="https://riggsware.pages.dev"><img src="https://img.shields.io/badge/Rigware.dev-%23000000.svg?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj48L3N2Zz4="   alt="Rigware.dev" />
+</p></a>
 
 <p align="center">
   <em>software engineer · terminal dweller · web & app builder</em>
