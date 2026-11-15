@@ -12,7 +12,7 @@
 <span style="margin-left:auto;color:#38f57f">neofetch</span>
 </div>
 <pre style="margin:0;font-family:inherit;font-size:12.5px;line-height:1.45;color:#d2ded7;white-space:pre;text-shadow:0 0 10px rgba(56,245,127,.16);">
-<span style="color:#6ff0ac">                   -`                     </span><b style="color:#38f57f">0xab3lo</b><span style="color:#6d8175">@</span><span style="color:#4ee0b5">arch</span><span style="color:#38f57f">█</span>
+<span style="color:#6ff0ac">                   -`                     </span><b style="color:#38f57f">ab3lo</b><span style="color:#6d8175">@</span><span style="color:#4ee0b5">arch</span><span style="color:#38f57f">█</span>
 <span style="color:#6befa9">                  .o+`                    </span><span style="color:#1d3327">-----------------</span>
 <span style="color:#68eea6">                 `ooo/                    </span><b style="color:#38f57f">os       </b><span style="color:#d2ded7">Arch Linux x86_64</span>
 <span style="color:#64eea3">                `+oooo:                   </span><b style="color:#38f57f">host     </b><span style="color:#d2ded7">riggsware dev box</span>
@@ -42,12 +42,12 @@
   <img src="https://img.shields.io/badge/ESP32-%230b0e0c?style=for-the-badge&logo=espressif&logoColor=%2338f57f" alt="ESP32" />
 </p>
 
-I flash ESP32s ([GHOSTESP](https://github.com/0xab3lo/GhostESP), [DeskBuddy](https://github.com/0xab3lo/ESP32-DeskBuddy)), ship web & e-commerce builds at [riggsware](https://riggsware.pages.dev), and break things with permission. Local models, local hardware, no hype.
+I flash ESP32s ([GHOSTESP](https://github.com/ab3lo/GhostESP), [DeskBuddy](https://github.com/ab3lo/ESP32-DeskBuddy)), ship web & e-commerce builds at [riggsware](https://riggsware.pages.dev), and break things with permission. Local models, local hardware, no hype.
 
 <p align="center">
-  <img height="160" src="https://github-readme-stats.shion.dev/api?username=0xab3lo&show_icons=true&theme=dark&hide_border=false&bg_color=0b0e0c&title_color=38f57f&icon_color=38f57f&text_color=c9d6ce&border_color=16221b" alt="GitHub stats" />
-  <img height="160" src="https://streak-stats.demolab.com/?user=0xab3lo&theme=dark&hide_border=false&background=0B0E0C&border=16221B&ring=38F57F&fire=38F57F&currStreakNum=C9D6CE&currStreakLabel=38F57F&sideNums=C9D6CE&sideLabels=C9D6CE&dates=6D8175" alt="Streak" />
-  <img height="160" src="https://github-readme-stats.shion.dev/api/top-langs/?username=0xab3lo&layout=compact&hide_border=false&include_all_commits=false&count_private=false&langs_count=8&bg_color=0b0e0c&title_color=38f57f&text_color=c9d6ce&border_color=16221b" alt="Top languages" />
+  <img height="160" src="https://github-readme-stats.shion.dev/api?username=ab3lo&show_icons=true&theme=dark&hide_border=false&bg_color=0b0e0c&title_color=38f57f&icon_color=38f57f&text_color=c9d6ce&border_color=16221b" alt="GitHub stats" />
+  <img height="160" src="https://streak-stats.demolab.com/?user=ab3lo&theme=dark&hide_border=false&background=0B0E0C&border=16221B&ring=38F57F&fire=38F57F&currStreakNum=C9D6CE&currStreakLabel=38F57F&sideNums=C9D6CE&sideLabels=C9D6CE&dates=6D8175" alt="Streak" />
+  <img height="160" src="https://github-readme-stats.shion.dev/api/top-langs/?username=ab3lo&layout=compact&hide_border=false&include_all_commits=false&count_private=false&langs_count=8&bg_color=0b0e0c&title_color=38f57f&text_color=c9d6ce&border_color=16221b" alt="Top languages" />
 </p>
 
 <p align="center"><sub>break it · understand it · build it properly</sub></p>
