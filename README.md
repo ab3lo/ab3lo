@@ -13,7 +13,7 @@
 
 ---
 
-## 👋 Abel here
+## 👋 Unreliable here
 
 I'm a **Software engineer** and chronic **Arch Linux** user and does everything I can to stay inside the terminal — because honestly, why leave it?
 
@@ -31,8 +31,8 @@ I build **web and app solutions** : secure and fast runtimes on the backend to c
 
 ---
 # 📊 GitHub Stats:
-  ![](https://streak-stats.demolab.com/?user=ab3lo&theme=dark&hide_border=false)<br/>
-  ![](https://github-readme-stats.shion.dev/api/top-langs/?username=ab3lo&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+  ![](https://streak-stats.demolab.com/?user=#&theme=dark&hide_border=false)<br/>
+  ![](https://github-readme-stats.shion.dev/api/top-langs/?username=#&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 ---
 
