@@ -47,9 +47,12 @@ I flash ESP32s ([GHOSTESP](https://github.com/ab3lo/GhostESP), [DeskBuddy](https
 <p align="center">
   <img height="160" src="https://github-readme-stats.shion.dev/api?username=ab3lo&show_icons=true&theme=dark&hide_border=false&bg_color=0b0e0c&title_color=38f57f&icon_color=38f57f&text_color=c9d6ce&border_color=16221b" alt="GitHub stats" />
   <img height="160" src="https://streak-stats.demolab.com/?user=ab3lo&theme=dark&hide_border=false&background=0B0E0C&border=16221B&ring=38F57F&fire=38F57F&currStreakNum=C9D6CE&currStreakLabel=38F57F&sideNums=C9D6CE&sideLabels=C9D6CE&dates=6D8175" alt="Streak" />
-<div align="center"><a href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"><img src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-support.svg" alt="Support Palestine" style="width: 100%;"></a></div>
-
+<img height="160" src="https://github-readme-stats.shion.dev/api/top-langs/?username=ab3lo&layout=compact&hide_border=false&include_all_commits=false&count_private=false&langs_count=8&bg_color=0b0e0c&title_color=38f57f&text_color=c9d6ce&border_color=16221b" alt="Top languages" />
+</p>
 <p align="center"><sub>break it · understand it · build it properly</sub></p>
+<div align="center">
+<a href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"><img src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/banner-support.svg" alt="Support Palestine" style="width: 100%;"></a></div>
+
 
 <p align="center">
   <a href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"><img src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg" width="155" height="20" alt="Stand with Palestine" /></a>
