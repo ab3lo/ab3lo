@@ -12,18 +12,6 @@
 
 </div>
 
-### `$ cat ~/skills`
-
-<img src="skills.svg" alt="$ cat ~/skills" width="100%"/>
-
-### `$ ./stats`
-
-<img src="stats.svg" alt="$ ./stats" width="100%"/>
-
-<br/>
-
-<img src="build.svg" alt="Let's build together" width="100%"/>
-
 
 
 
