@@ -22,7 +22,7 @@
   <img src="https://img.shields.io/badge/ESP32-%230b0e0c?style=for-the-badge&logo=espressif&logoColor=%2338f57f" alt="ESP32" />
 </p>
 
-I flash ESP32s ([GHOSTESP](https://github.com/ab3lo/GhostESP), [DeskBuddy](https://github.com/ab3lo/ESP32-DeskBuddy)), ship web & e-commerce builds at [riggsware](https://riggsware.pages.dev), and break things with permission. Local models, local hardware, no hype.
+I flash ESP32s ([GHOSTESP](https://github.com/ab3lo/GhostESP), [DeskBuddy](https://github.com/ab3lo/ESP32-DeskBuddy)), ship web & e-commerce builds at [riggsware](https://riggsware.pages.dev), and break things with permission.
 
 <p align="center">
   <img height="160" src="https://github-readme-stats.shion.dev/api?username=ab3lo&show_icons=true&theme=dark&hide_border=false&bg_color=0b0e0c&title_color=38f57f&icon_color=38f57f&text_color=c9d6ce&border_color=16221b" alt="GitHub stats" />
