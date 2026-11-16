@@ -12,7 +12,7 @@
 <span style="margin-left:auto;color:#38f57f">neofetch</span>
 </div>
 <pre style="margin:0;font-family:inherit;font-size:12.5px;line-height:1.45;color:#d2ded7;white-space:pre;text-shadow:0 0 10px rgba(56,245,127,.16);">
-<span style="color:#6ff0ac">                   -`                     </span><b style="color:#38f57f">ab3lo</b><span style="color:#6d8175">@</span><span style="color:#4ee0b5">arch</span><span style="color:#38f57f">█</span>
+<span style="color:#6ff0ac">                   -`                     </span><b style="color:#38f57f">ab3lo</b><span style="color:#6d8175">@</span><span style="color:#4ee0b5">arch</span>
 <span style="color:#6befa9">                  .o+`                    </span><span style="color:#1d3327">-----------------</span>
 <span style="color:#68eea6">                 `ooo/                    </span><b style="color:#38f57f">os       </b><span style="color:#d2ded7">Arch Linux x86_64</span>
 <span style="color:#64eea3">                `+oooo:                   </span><b style="color:#38f57f">host     </b><span style="color:#d2ded7">riggsware dev box</span>
