@@ -1,416 +1,775 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#060907" />
+    <title>0xunreliable@arch:~$ portfolio</title>
+    <meta
+      name="description"
+      content="0xunreliable — ethical hacker by passion, software engineer by trade. ESP32 firmware, offensive security, and web + e-commerce builds through riggsware."
+    />
+    <meta name="author" content="0xunreliable" />
+    <meta
+      property="og:title"
+      content="0xunreliable — ethical hacker / embedded engineer"
+    />
+    <meta
+      property="og:description"
+      content="GhostESP, ESP32 firmware, wardriving, local compute, and web + e-commerce stores at riggsware."
+    />
+    <meta property="og:url" content="https://0xunreliable.dev/" />
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "0xunreliable",
+        "url": "https://0xunreliable.dev/",
+        "jobTitle": "Ethical Hacker & Software Engineer",
+        "sameAs": [
+          "https://github.com/0xunreliable",
+          "https://x.com/0xunreliable",
+          "https://riggsware.pages.dev"
+        ],
+        "knowsAbout": [
+          "C",
+          "C++",
+          "Python",
+          "Rust",
+          "Zig",
+          "Odin",
+          "TypeScript",
+          "Kotlin",
+          "Svelte",
+          "Vue",
+          "ESP32",
+          "ESP-IDF",
+          "Arduino",
+          "Penetration Testing",
+          "Wardriving",
+          "Arch Linux"
+        ]
+      }
+    </script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#060907">
-  <title>0xunreliable@arch:~$ portfolio</title>
-  <meta name="description"
-    content="0xunreliable — ethical hacker by passion, software engineer by trade. ESP32 firmware, offensive security, and web + e-commerce builds through riggsware.">
-  <meta name="author" content="0xunreliable">
-  <meta property="og:title" content="0xunreliable — ethical hacker / embedded engineer">
-  <meta property="og:description"
-    content="GhostESP, ESP32 firmware, wardriving, local compute, and web + e-commerce stores at riggsware.">
-  <meta property="og:url" content="https://0xunreliable.dev/">
-  <link rel="stylesheet" href="/static/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-  <script
-    type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"0xunreliable","url":"https://0xunreliable.dev/","jobTitle":"Ethical Hacker & Software Engineer","sameAs":["https://github.com/0xunreliable","https://x.com/0xunreliable","https://riggsware.pages.dev"],"knowsAbout":["C","C++","Python","Rust","Zig","Odin","TypeScript","Kotlin","Svelte","Vue","ESP32","ESP-IDF","Arduino","Penetration Testing","Wardriving","Arch Linux"]}</script>
-</head>
-
-<body class="boot">
-
-  <div class="boot-scr" id="boot">
-    <pre id="bootpre"></pre>
-    <div class="boot-bar"><i id="bootBar"></i></div>
-    <div class="boot-pct" id="bootPct">0%</div>
-  </div>
-
-  <div class="win" id="mainWin">
-    <div class="bar">
-      <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
-      <span class="path">0x@riggsware: ~/portfolio — zsh</span>
-      <span class="clock" id="clock"></span>
-      <span class="right">
-        <button id="toDesign">designs</button>
-        <button id="toExec">simple view</button>
-      </span>
+  <body class="boot">
+    <div class="boot-scr" id="boot">
+      <pre id="bootpre"></pre>
+      <div class="boot-bar"><i id="bootBar"></i></div>
+      <div class="boot-pct" id="bootPct">0%</div>
     </div>
-    <div class="term" id="term">
-      <!-- whoami -->
-      <div class="blk">
-        <div class="cmd"><b>whoami</b> <span class="flag">--verbose</span></div>
-        <div class="out">
-          <div class="ascii-wrap">
-            <pre class="ascii" id="ascii" title="psst… click me"></pre>
+
+    <div class="win" id="mainWin">
+      <div class="bar">
+        <span class="tl r"></span><span class="tl y"></span
+        ><span class="tl g"></span>
+        <span class="path">0x@riggsware: ~/portfolio — zsh</span>
+        <span class="clock" id="clock"></span>
+        <span class="right">
+          <button id="toDesign">designs</button>
+          <button id="toExec">simple view</button>
+        </span>
+      </div>
+      <div class="term" id="term">
+        <!-- whoami -->
+        <div class="blk">
+          <div class="cmd">
+            <b>whoami</b> <span class="flag">--verbose</span>
           </div>
-          <div class="tag"><span class="grn">0xunreliable</span> :: <span class="role" id="role"></span><span
-              class="cursor"></span></div>
-          <div class="kv">
-            <span class="k">status</span><span class="v grn">● open for freelance · riggsware taking projects</span>
-            <span class="k">focus</span><span class="v">offensive security · embedded &amp; esp32 · web / ecommerce</span>
-            <span class="k">agents</span><span class="v">opencode · claude code · pi <span class="dim">(cloud +
-                local)</span></span>
-            <span class="k">skills</span><span class="v">c · c++ · python · rust · zig · odin · typescript · kotlin ·
-              svelte · vue <span class="dim">+ esp-idf, radio &amp; firmware</span></span>
-            <span class="k">summary</span><span class="v">ethical hacker by passion, software engineer by trade. i rip
-              electronics apart, flash microcontrollers, and ship web + ecommerce products end to end. ai? runs local,
-              on my own hardware, or not at all.</span>
+          <div class="out">
+            <div class="ascii-wrap">
+              <pre class="ascii" id="ascii" title="psst… click me"></pre>
+            </div>
+            <div class="tag">
+              <span class="grn">0xunreliable</span> ::
+              <span class="role" id="role"></span><span class="cursor"></span>
+            </div>
+            <div class="kv">
+              <span class="k">status</span
+              ><span class="v grn"
+                >● open for freelance · riggsware taking projects</span
+              >
+              <span class="k">focus</span
+              ><span class="v"
+                >offensive security · embedded &amp; esp32 · web /
+                ecommerce</span
+              >
+              <span class="k">agents</span
+              ><span class="v"
+                >opencode · claude code · pi
+                <span class="dim">(cloud + local)</span></span
+              >
+              <span class="k">skills</span
+              ><span class="v"
+                >c · c++ · python · rust · zig · odin · typescript · kotlin ·
+                svelte · vue
+                <span class="dim">+ esp-idf, radio &amp; firmware</span></span
+              >
+              <span class="k">summary</span
+              ><span class="v"
+                >ethical hacker by passion, software engineer by trade. i rip
+                electronics apart, flash microcontrollers, and ship web +
+                ecommerce products end to end. ai? runs local, on my own
+                hardware, or not at all.</span
+              >
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- neofetch -->
-      <div class="blk">
-        <div class="cmd"><b>neofetch</b></div>
-        <div class="out">
-          <div class="nf">
-            <pre class="nf-logo">      .--.
+        <!-- neofetch -->
+        <div class="blk">
+          <div class="cmd"><b>neofetch</b></div>
+          <div class="out">
+            <div class="nf">
+              <pre class="nf-logo">
+      .--.
      |o_o |
      |:_/ |   &lt;/&gt;
     //   \ \
    (|     | )
   /'\_   _/`\
   \___)=(___/</pre>
-            <div class="nf-info">
-              <div class="row"><span class="key">0xunreliable</span><span class="sep">@</span><span class="val2">arch</span></div>
-              <div class="row"><span class="key">os</span><span class="sep">:</span><span class="val2">Arch Linux
-                  x86_64</span></div>
-              <div class="row"><span class="key">host</span><span class="sep">:</span><span class="val2">riggsware dev
-                  box</span></div>
-              <div class="row"><span class="key">kernel</span><span class="sep">:</span><span class="val2">6.12.4-arch1-1</span>
+              <div class="nf-info">
+                <div class="row">
+                  <span class="key">0xunreliable</span><span class="sep">@</span
+                  ><span class="val2">arch</span>
+                </div>
+                <div class="row">
+                  <span class="key">os</span><span class="sep">:</span
+                  ><span class="val2">Arch Linux x86_64</span>
+                </div>
+                <div class="row">
+                  <span class="key">host</span><span class="sep">:</span
+                  ><span class="val2">riggsware dev box</span>
+                </div>
+                <div class="row">
+                  <span class="key">kernel</span><span class="sep">:</span
+                  ><span class="val2">6.12.4-arch1-1</span>
+                </div>
+                <div class="row">
+                  <span class="key">shell</span><span class="sep">:</span
+                  ><span class="val2">zsh 5.9 · foot</span>
+                </div>
+                <div class="row">
+                  <span class="key">stack</span><span class="sep">:</span
+                  ><span class="val2">c/c++ · rust · zig · ts</span>
+                </div>
+                <div class="row">
+                  <span class="key">uptime</span><span class="sep">:</span
+                  ><span class="val2" id="nfUptime">0s</span>
+                </div>
+                <div class="row">
+                  <span class="key">location</span><span class="sep">:</span
+                  ><span class="val2">[city], remote worldwide</span>
+                </div>
+                <div class="row">
+                  <span class="key">status</span><span class="sep">:</span
+                  ><span class="val2 grn">● available for work</span>
+                </div>
+                <div class="row">
+                  <span class="key">coffee</span><span class="sep">:</span
+                  ><span class="val2"
+                    ><span class="grn">████████</span
+                    ><span class="dim">░░</span> 80%</span
+                  >
+                </div>
+                <div class="nf-palette">
+                  <span style="background: var(--fg)"></span
+                  ><span style="background: var(--red)"></span>
+                  <span style="background: var(--grn)"></span
+                  ><span style="background: var(--yel)"></span>
+                  <span style="background: var(--cyn)"></span
+                  ><span style="background: var(--mag)"></span>
+                  <span style="background: #56d4dd"></span
+                  ><span style="background: var(--dim)"></span>
+                </div>
               </div>
-              <div class="row"><span class="key">shell</span><span class="sep">:</span><span class="val2">zsh 5.9 ·
-                  foot</span>
+            </div>
+            <div class="h" style="margin-top: 24px">skill levels</div>
+            <div class="bars" id="skillBars">
+              <div class="bar-row">
+                <span class="bn">python</span
+                ><span class="bar-track" data-pct="93"></span
+                ><span class="bar-pct">93%</span>
               </div>
-              <div class="row"><span class="key">stack</span><span class="sep">:</span><span class="val2">c/c++ · rust ·
-                  zig · ts</span></div>
-              <div class="row"><span class="key">uptime</span><span class="sep">:</span><span class="val2"
-                  id="nfUptime">0s</span></div>
-              <div class="row"><span class="key">location</span><span class="sep">:</span><span class="val2">[city],
-                  remote worldwide</span></div>
-              <div class="row"><span class="key">status</span><span class="sep">:</span><span class="val2 grn">●
-                  available for work</span></div>
-              <div class="row"><span class="key">coffee</span><span class="sep">:</span><span class="val2"><span
-                    class="grn">████████</span><span class="dim">░░</span> 80%</span></div>
-              <div class="nf-palette">
-                <span style="background:var(--fg)"></span><span style="background:var(--red)"></span>
-                <span style="background:var(--grn)"></span><span style="background:var(--yel)"></span>
-                <span style="background:var(--cyn)"></span><span style="background:var(--mag)"></span>
-                <span style="background:#56d4dd"></span><span style="background:var(--dim)"></span>
+              <div class="bar-row">
+                <span class="bn">c / c++</span
+                ><span class="bar-track" data-pct="88"></span
+                ><span class="bar-pct">88%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bn">rust</span
+                ><span class="bar-track" data-pct="76"></span
+                ><span class="bar-pct">76%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bn">zig</span
+                ><span class="bar-track" data-pct="68"></span
+                ><span class="bar-pct">68%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bn">esp32 / fw</span
+                ><span class="bar-track" data-pct="91"></span
+                ><span class="bar-pct">91%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bn">pentesting</span
+                ><span class="bar-track" data-pct="84"></span
+                ><span class="bar-pct">84%</span>
               </div>
             </div>
           </div>
-          <div class="h" style="margin-top:24px">skill levels</div>
-          <div class="bars" id="skillBars">
-            <div class="bar-row"><span class="bn">python</span><span class="bar-track" data-pct="93"></span><span
-                class="bar-pct">93%</span></div>
-            <div class="bar-row"><span class="bn">c / c++</span><span class="bar-track" data-pct="88"></span><span
-                class="bar-pct">88%</span></div>
-            <div class="bar-row"><span class="bn">rust</span><span class="bar-track" data-pct="76"></span><span
-                class="bar-pct">76%</span></div>
-            <div class="bar-row"><span class="bn">zig</span><span class="bar-track" data-pct="68"></span><span
-                class="bar-pct">68%</span></div>
-            <div class="bar-row"><span class="bn">esp32 / fw</span><span class="bar-track" data-pct="91"></span><span
-                class="bar-pct">91%</span></div>
-            <div class="bar-row"><span class="bn">pentesting</span><span class="bar-track" data-pct="84"></span><span
-                class="bar-pct">84%</span></div>
+        </div>
+
+        <!-- projects -->
+        <div class="blk">
+          <div class="cmd">
+            <b>ls</b> <span class="flag">-la</span> ./projects
+          </div>
+          <div class="out">
+            <div class="h">selected work · 5 entries</div>
+            <table class="tbl">
+              <tr
+                class="proj"
+                data-href="https://github.com/0xunreliable/GhostESP"
+              >
+                <td class="perm">drwxr-xr-x</td>
+                <td class="nm">ghostesp</td>
+                <td class="ds">
+                  esp32 wifi toolkit — deauth testing, monitor mode and
+                  wardriving on one flash <span class="arr">➜ open</span
+                  ><br /><span class="tg">esp-idf / c / esp32</span>
+                </td>
+              </tr>
+              <tr
+                class="proj"
+                data-href="https://github.com/0xunreliable/ESP32-DeskBuddy"
+              >
+                <td class="perm">drwxr-xr-x</td>
+                <td class="nm">deskbuddy</td>
+                <td class="ds">
+                  0.96" oled desk companion: clock, machine stats,
+                  notifications, one judgmental little face
+                  <span class="arr">➜ open</span><br /><span class="tg"
+                    >esp32 / arduino-ide / c++</span
+                  >
+                </td>
+              </tr>
+              <tr class="proj" data-href="https://riggsware.pages.dev">
+                <td class="perm">drwxr-xr-x</td>
+                <td class="nm">riggsware</td>
+                <td class="ds">
+                  web &amp; ecommerce studio — storefronts, sites and the infra
+                  they live on <span class="arr">➜ open</span><br /><span
+                    class="tg"
+                    >woocommerce / next / cloudflare</span
+                  >
+                </td>
+              </tr>
+              <tr
+                class="proj"
+                data-href="https://github.com/0xunreliable/riggbox"
+              >
+                <td class="perm">drwxr-xr-x</td>
+                <td class="nm">riggbox</td>
+                <td class="ds">
+                  self-hosted inference box: local models + coding agents on my
+                  own metal, zero cloud calls <span class="arr">➜ open</span
+                  ><br /><span class="tg">linux / llama.cpp / docker</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="perm">-rw-r--r--</td>
+                <td class="nm" style="color: var(--dim)">wardrive-map</td>
+                <td class="ds">
+                  wardriving captures plotted on a map — every ssid i've ever
+                  heard, still cooking<br /><span class="tg"
+                    >python / sqlite / leaflet</span
+                  >
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
-      </div>
 
-      <!-- projects -->
-      <div class="blk">
-        <div class="cmd"><b>ls</b> <span class="flag">-la</span> ./projects</div>
-        <div class="out">
-          <div class="h">selected work · 5 entries</div>
-          <table class="tbl">
-            <tr class="proj" data-href="https://github.com/0xunreliable/GhostESP">
-              <td class="perm">drwxr-xr-x</td>
-              <td class="nm">ghostesp</td>
-              <td class="ds">esp32 wifi toolkit — deauth testing, monitor mode and wardriving on one flash <span
-                  class="arr">➜ open</span><br><span class="tg">esp-idf / c / esp32</span></td>
-            </tr>
-            <tr class="proj" data-href="https://github.com/0xunreliable/ESP32-DeskBuddy">
-              <td class="perm">drwxr-xr-x</td>
-              <td class="nm">deskbuddy</td>
-              <td class="ds">0.96" oled desk companion: clock, machine stats, notifications, one judgmental little face
-                <span class="arr">➜ open</span><br><span class="tg">esp32 / arduino-ide / c++</span></td>
-            </tr>
-            <tr class="proj" data-href="https://riggsware.pages.dev">
-              <td class="perm">drwxr-xr-x</td>
-              <td class="nm">riggsware</td>
-              <td class="ds">web &amp; ecommerce studio — storefronts, sites and the infra they live on <span
-                  class="arr">➜ open</span><br><span class="tg">woocommerce / next / cloudflare</span></td>
-            </tr>
-            <tr class="proj" data-href="https://github.com/0xunreliable/riggbox">
-              <td class="perm">drwxr-xr-x</td>
-              <td class="nm">riggbox</td>
-              <td class="ds">self-hosted inference box: local models + coding agents on my own metal, zero cloud calls
-                <span class="arr">➜ open</span><br><span class="tg">linux / llama.cpp / docker</span></td>
-            </tr>
-            <tr>
-              <td class="perm">-rw-r--r--</td>
-              <td class="nm" style="color:var(--dim)">wardrive-map</td>
-              <td class="ds">wardriving captures plotted on a map — every ssid i've ever heard, still cooking<br><span
-                  class="tg">python / sqlite / leaflet</span></td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <!-- experience -->
-      <div class="blk">
-        <div class="cmd"><b>git</b> <span class="flag">log</span> --oneline ./experience</div>
-        <div class="out">
-          <div class="h">experience · since 2023</div>
-          <div class="log">
-            <div class="commit">
-              <div class="top"><span class="hash">c4f0e11</span> <span class="role">Founder · Web &amp; E-commerce
-                  Engineer</span>
-                <span class="meta">riggsware · jan 2024 — present</span></div>
-              <ul>
-                <li>run a small studio shipping ecommerce storefronts and web apps for new and growing businesses</li>
-                <li>own the whole pipeline: scope, design, build, deploy, and the infra it runs on</li>
-                <li>keep the stack boring and self-hosted so clients own their data and their bills</li>
-              </ul>
+        <!-- experience -->
+        <div class="blk">
+          <div class="cmd">
+            <b>git</b> <span class="flag">log</span> --oneline ./experience
+          </div>
+          <div class="out">
+            <div class="h">experience · since 2023</div>
+            <div class="log">
+              <div class="commit">
+                <div class="top">
+                  <span class="hash">c4f0e11</span>
+                  <span class="role"
+                    >Founder · Web &amp; E-commerce Engineer</span
+                  >
+                  <span class="meta">riggsware · jan 2024 — present</span>
+                </div>
+                <ul>
+                  <li>
+                    run a small studio shipping ecommerce storefronts and web
+                    apps for new and growing businesses
+                  </li>
+                  <li>
+                    own the whole pipeline: scope, design, build, deploy, and
+                    the infra it runs on
+                  </li>
+                  <li>
+                    keep the stack boring and self-hosted so clients own their
+                    data and their bills
+                  </li>
+                </ul>
+              </div>
+              <div class="commit">
+                <div class="top">
+                  <span class="hash">9b02a7d</span>
+                  <span class="role"
+                    >Embedded &amp; Offensive Security R&amp;D</span
+                  >
+                  <span class="meta">the lab · 2023 — present</span>
+                </div>
+                <ul>
+                  <li>
+                    built ghostesp — esp32 firmware for wifi deauth testing and
+                    wardriving
+                  </li>
+                  <li>
+                    built esp32 deskbuddy — a 0.96" oled desk companion, open
+                    sourced
+                  </li>
+                  <li>
+                    live in nmap, wireshark, burp suite and john the ripper;
+                    break things only with permission
+                  </li>
+                </ul>
+              </div>
+              <div class="commit">
+                <div class="top">
+                  <span class="hash">77d1e0c</span>
+                  <span class="role">Software Engineer</span>
+                  <span class="meta">freelance / contract · 2023 — 2024</span>
+                </div>
+                <ul>
+                  <li>
+                    shipped python backends and typescript frontends for small
+                    business clients
+                  </li>
+                  <li>
+                    debugged production issues across linux servers and embedded
+                    hardware
+                  </li>
+                </ul>
+              </div>
+              <div class="commit">
+                <div class="top">
+                  <span class="hash">2a9f5be</span>
+                  <span class="role">B.Sc. Software Engineering</span>
+                  <span class="meta">in progress</span>
+                </div>
+                <ul>
+                  <li>
+                    studying the theory behind the things already shipping in
+                    production
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="commit">
-              <div class="top"><span class="hash">9b02a7d</span> <span class="role">Embedded &amp; Offensive Security
-                  R&amp;D</span>
-                <span class="meta">the lab · 2023 — present</span></div>
-              <ul>
-                <li>built ghostesp — esp32 firmware for wifi deauth testing and wardriving</li>
-                <li>built esp32 deskbuddy — a 0.96" oled desk companion, open sourced</li>
-                <li>live in nmap, wireshark, burp suite and john the ripper; break things only with permission</li>
-              </ul>
+          </div>
+        </div>
+
+        <!-- contact -->
+        <div class="blk">
+          <div class="cmd"><b>cat</b> ./contact.txt</div>
+          <div class="out">
+            <div class="h">get in touch</div>
+            <div class="dim" style="margin-top: 6px">
+              # open to freelance work, firmware collabs and security gigs — say
+              hi anytime.
             </div>
-            <div class="commit">
-              <div class="top"><span class="hash">77d1e0c</span> <span class="role">Software Engineer</span>
-                <span class="meta">freelance / contract · 2023 — 2024</span></div>
-              <ul>
-                <li>shipped python backends and typescript frontends for small business clients</li>
-                <li>debugged production issues across linux servers and embedded hardware</li>
-              </ul>
+            <div class="cgrid">
+              <a class="cc" href="mailto:root@0xunreliable.dev">
+                <div class="lbl">email</div>
+                <div class="val">root@0xunreliable.dev</div>
+              </a>
+              <a
+                class="cc"
+                href="https://github.com/0xunreliable"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="lbl">github</div>
+                <div class="val">@0xunreliable</div>
+              </a>
+              <a
+                class="cc"
+                href="https://x.com/0xunreliable"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="lbl">x</div>
+                <div class="val">@0xunreliable</div>
+              </a>
+              <a
+                class="cc"
+                href="https://riggsware.pages.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="lbl">the studio</div>
+                <div class="val">riggsware.pages.dev</div>
+              </a>
             </div>
-            <div class="commit">
-              <div class="top"><span class="hash">2a9f5be</span> <span class="role">B.Sc. Software Engineering</span>
-                <span class="meta">in progress</span></div>
-              <ul>
-                <li>studying the theory behind the things already shipping in production</li>
-              </ul>
+            <div class="foot">
+              © 2026 0xunreliable — built in the terminal · arch linux btw ·
+              remote worldwide
+            </div>
+            <div class="h" style="margin-top: 28px">interactive shell</div>
+            <div class="dim" style="margin-top: 4px; font-size: 12.5px">
+              # type <span class="grn">help</span> and hit enter · try
+              <span class="yel">esp32</span>, <span class="yel">wardrive</span>,
+              <span class="yel">ai</span>, <span class="yel">theme</span>,
+              <span class="yel">matrix</span>
+            </div>
+            <div class="console" id="console" tabindex="0">
+              <div id="clog"></div>
+              <div class="cline">
+                <span class="ps1">0x@riggsware</span><span class="dim">:</span
+                ><span class="cyn">~</span><span class="dim">$&nbsp;</span
+                ><input
+                  id="cin"
+                  class="cin"
+                  autocomplete="off"
+                  autocapitalize="off"
+                  autocorrect="off"
+                  spellcheck="false"
+                  aria-label="terminal input"
+                />
+              </div>
+            </div>
+            <div class="solidarity">
+              <a
+                href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Stand with Palestine"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg"
+                  width="155"
+                  height="20"
+                  alt="Stand with Palestine"
+                  loading="lazy"
+                  referrerpolicy="no-referrer"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- contact -->
-      <div class="blk">
-        <div class="cmd"><b>cat</b> ./contact.txt</div>
-        <div class="out">
-          <div class="h">get in touch</div>
-          <div class="dim" style="margin-top:6px"># open to freelance work, firmware collabs and security gigs — say hi
-            anytime.</div>
-          <div class="cgrid">
-            <a class="cc" href="mailto:root@0xunreliable.dev">
-              <div class="lbl">email</div>
-              <div class="val">root@0xunreliable.dev</div>
-            </a>
-            <a class="cc" href="https://github.com/0xunreliable" target="_blank" rel="noopener noreferrer">
-              <div class="lbl">github</div>
-              <div class="val">@0xunreliable</div>
-            </a>
-            <a class="cc" href="https://x.com/0xunreliable" target="_blank" rel="noopener noreferrer">
-              <div class="lbl">x</div>
-              <div class="val">@0xunreliable</div>
-            </a>
-            <a class="cc" href="https://riggsware.pages.dev" target="_blank" rel="noopener noreferrer">
-              <div class="lbl">the studio</div>
-              <div class="val">riggsware.pages.dev</div>
-            </a>
+    <!-- ============ SIMPLE VIEW ============ -->
+    <div id="execview" class="exec-theme">
+      <div class="ev-wrap">
+        <nav class="ev-nav">
+          <div class="ev-logo">0xunreliable</div>
+          <div class="ev-navright">
+            <a href="#" id="toDesign2">Designs</a>
+            <a href="#" id="toTerm">Dev-view</a>
           </div>
-          <div class="foot">© 2026 0xunreliable — built in the terminal · arch linux btw · remote worldwide</div>
-          <div class="h" style="margin-top:28px">interactive shell</div>
-          <div class="dim" style="margin-top:4px;font-size:12.5px"># type <span class="grn">help</span> and hit enter ·
-            try <span class="yel">esp32</span>, <span class="yel">wardrive</span>, <span class="yel">ai</span>, <span
-              class="yel">theme</span>, <span class="yel">matrix</span></div>
-          <div class="console" id="console" tabindex="0">
-            <div id="clog"></div>
-            <div class="cline"><span class="ps1">0x@riggsware</span><span class="dim">:</span><span
-                class="cyn">~</span><span class="dim">$&nbsp;</span><input id="cin" class="cin" autocomplete="off"
-                autocapitalize="off" autocorrect="off" spellcheck="false" aria-label="terminal input" /></div>
+        </nav>
+        <header class="ev-hero">
+          <p class="ev-kicker">Software Engineer · Ethical Hacker</p>
+          <h1>0xunreliable</h1>
+          <p class="ev-intro">
+            Ethical hacker by passion, software engineer by trade. I write
+            firmware for ESP32s, run offensive security work with permission,
+            and ship web and e-commerce products through riggsware.
+          </p>
+          <p class="ev-intro">
+            C, C++, Python, Rust, Zig, Odin, TypeScript, Kotlin, Svelte and Vue
+            — plus ESP-IDF, the Arduino IDE, Arch Linux, nmap, Wireshark, Burp
+            Suite, John the Ripper and foot. Coding agents: OpenCode, Claude
+            Code and pi, pointed at local models on my own hardware.
+          </p>
+          <p class="ev-links">
+            <a href="mailto:root@0xunreliable.dev">Email</a>
+            <a
+              href="https://github.com/0xunreliable"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="https://x.com/0xunreliable"
+              target="_blank"
+              rel="noopener noreferrer"
+              >X</a
+            >
+            <a
+              href="https://riggsware.pages.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Riggsware</a
+            >
+          </p>
+        </header>
+        <section class="ev-sec" id="ev-work">
+          <h2>Selected Work</h2>
+          <div class="ev-list">
+            <a
+              class="ev-item"
+              href="https://github.com/0xunreliable/GhostESP"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="t">GhostESP</span
+              ><span class="d"
+                >ESP32 firmware for wifi deauth testing and wardriving — monitor
+                mode, frame capture and channel hopping in one flash.</span
+              ><span class="m">ESP-IDF, C, ESP32</span></a
+            >
+            <a
+              class="ev-item"
+              href="https://github.com/0xunreliable/ESP32-DeskBuddy"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="t">ESP32 DeskBuddy</span
+              ><span class="d"
+                >A 0.96" OLED desk companion on a microcontroller: clock,
+                machine stats, notifications and a face with opinions.</span
+              ><span class="m">ESP32, Arduino IDE, C++</span></a
+            >
+            <a
+              class="ev-item"
+              href="https://riggsware.pages.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="t">Riggsware</span
+              ><span class="d"
+                >The studio: e-commerce storefronts, web apps and the
+                infrastructure underneath, built to stay under the client's
+                control.</span
+              ><span class="m">WooCommerce, Next.js, Cloudflare</span></a
+            >
+            <a
+              class="ev-item"
+              href="https://github.com/0xunreliable/riggbox"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span class="t">riggbox</span
+              ><span class="d"
+                >Self-hosted inference box — local models and coding agents
+                running on my own hardware, with no calls leaving the
+                rack.</span
+              ><span class="m">Linux, llama.cpp, Docker</span></a
+            >
+            <div class="ev-item">
+              <span class="t">Wardrive Map</span
+              ><span class="d"
+                >Wardriving captures turned into a map of every network ever
+                heard on an ESP32. Still cooking.</span
+              ><span class="m">Python, SQLite, Leaflet</span>
+            </div>
           </div>
-          <div class="solidarity">
-            <a href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"
-              target="_blank" rel="noopener noreferrer" aria-label="Stand with Palestine">
-              <img
-                src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg"
-                width="155" height="20" alt="Stand with Palestine" loading="lazy" referrerpolicy="no-referrer" />
-            </a>
+        </section>
+        <section class="ev-sec" id="ev-exp">
+          <h2>Experience</h2>
+          <div class="ev-list">
+            <div class="ev-item">
+              <span class="t">Founder · Web &amp; E-commerce Engineer</span
+              ><span class="d"
+                >Run riggsware, a small studio shipping storefronts and web apps
+                for growing businesses — scope, design, build, deploy and the
+                infrastructure behind it.</span
+              ><span class="m">Riggsware · Jan 2024 — Present</span>
+            </div>
+            <div class="ev-item">
+              <span class="t">Embedded &amp; Offensive Security R&amp;D</span
+              ><span class="d"
+                >Build ESP32 firmware and hardware offensives: GhostESP for
+                deauth testing and wardriving, DeskBuddy for the desk. Break
+                things with permission.</span
+              ><span class="m">The lab · 2023 — Present</span>
+            </div>
+            <div class="ev-item">
+              <span class="t">Software Engineer</span
+              ><span class="d"
+                >Shipped Python backends and TypeScript frontends for small
+                business clients, and debugged production issues on Linux
+                servers and embedded hardware.</span
+              ><span class="m">Freelance / contract · 2023 — 2024</span>
+            </div>
+            <div class="ev-item">
+              <span class="t">B.Sc. Software Engineering</span
+              ><span class="d"
+                >Studying the theory behind the things already shipping in
+                production.</span
+              ><span class="m">In progress</span>
+            </div>
+          </div>
+        </section>
+        <section class="ev-sec" id="ev-contact">
+          <h2>Contact</h2>
+          <p class="ev-intro">
+            Open to freelance work, firmware collaborations and security
+            engagements. Whether you have a store to ship or a board to break,
+            I'd love to hear from you.
+          </p>
+          <p class="ev-mail">
+            <a href="mailto:root@0xunreliable.dev">root@0xunreliable.dev</a>
+          </p>
+        </section>
+        <footer class="ev-foot">
+          <span>© 2026 0xunreliable</span>
+          <span
+            ><a
+              href="https://github.com/0xunreliable"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            ·
+            <a
+              href="https://x.com/0xunreliable"
+              target="_blank"
+              rel="noopener noreferrer"
+              >X</a
+            >
+            ·
+            <a
+              href="https://riggsware.pages.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Riggsware</a
+            ></span
+          >
+        </footer>
+        <div class="solidarity">
+          <a
+            href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Stand with Palestine"
+          >
+            <img
+              src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg"
+              width="155"
+              height="20"
+              alt="Stand with Palestine"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ DESIGN VIEW (TERM) ============ -->
+    <div class="win" id="designTerm">
+      <div class="bar">
+        <span class="tl r"></span><span class="tl y"></span
+        ><span class="tl g"></span>
+        <span class="path">0x@riggsware: ~/portfolio/designs — zsh</span>
+        <span class="right"><button class="designBackBtn">← back</button></span>
+      </div>
+      <div class="term">
+        <div class="blk in">
+          <div class="cmd">
+            <b>ls</b> <span class="flag">-la</span> ./designs
+          </div>
+          <div class="out">
+            <div class="h">design gallery · figma</div>
+            <div class="dim" style="margin-top: 6px; margin-bottom: 20px">
+              # interfaces and storefronts shipped through riggsware — layout,
+              type, and visual systems.
+            </div>
+            <div class="dg-grid" id="dgGridTerm"></div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- ============ SIMPLE VIEW ============ -->
-  <div id="execview" class="exec-theme">
-    <div class="ev-wrap">
-      <nav class="ev-nav">
-        <div class="ev-logo">0xunreliable</div>
-        <div class="ev-navright">
-          <a href="#" id="toDesign2">Designs</a>
-          <a href="#" id="toTerm">Dev-view</a>
-        </div>
-      </nav>
-      <header class="ev-hero">
-        <p class="ev-kicker">Software Engineer · Ethical Hacker</p>
-        <h1>0xunreliable</h1>
-        <p class="ev-intro">Ethical hacker by passion, software engineer by trade. I write firmware for ESP32s, run
-          offensive security work with permission, and ship web and e-commerce products through riggsware.</p>
-        <p class="ev-intro">C, C++, Python, Rust, Zig, Odin, TypeScript, Kotlin, Svelte and Vue — plus ESP-IDF, the
-          Arduino IDE, Arch Linux, nmap, Wireshark, Burp Suite, John the Ripper and foot. Coding agents: OpenCode,
-          Claude Code and pi, pointed at local models on my own hardware.</p>
-        <p class="ev-links"><a href="mailto:root@0xunreliable.dev">Email</a> <a href="https://github.com/0xunreliable"
-            target="_blank" rel="noopener noreferrer">GitHub</a> <a href="https://x.com/0xunreliable" target="_blank"
-            rel="noopener noreferrer">X</a> <a href="https://riggsware.pages.dev" target="_blank"
-            rel="noopener noreferrer">Riggsware</a></p>
-      </header>
-      <section class="ev-sec" id="ev-work">
-        <h2>Selected Work</h2>
-        <div class="ev-list">
-          <a class="ev-item" href="https://github.com/0xunreliable/GhostESP" target="_blank"
-            rel="noopener noreferrer"><span class="t">GhostESP</span><span class="d">ESP32 firmware for wifi deauth
-              testing and wardriving — monitor mode, frame capture and channel hopping in one flash.</span><span
-              class="m">ESP-IDF, C, ESP32</span></a>
-          <a class="ev-item" href="https://github.com/0xunreliable/ESP32-DeskBuddy" target="_blank"
-            rel="noopener noreferrer"><span class="t">ESP32 DeskBuddy</span><span class="d">A 0.96" OLED desk companion
-              on a microcontroller: clock, machine stats, notifications and a face with opinions.</span><span
-              class="m">ESP32, Arduino IDE, C++</span></a>
-          <a class="ev-item" href="https://riggsware.pages.dev" target="_blank" rel="noopener noreferrer"><span
-              class="t">Riggsware</span><span class="d">The studio: e-commerce storefronts, web apps and the
-              infrastructure underneath, built to stay under the client's control.</span><span
-              class="m">WooCommerce, Next.js, Cloudflare</span></a>
-          <a class="ev-item" href="https://github.com/0xunreliable/riggbox" target="_blank"
-            rel="noopener noreferrer"><span class="t">riggbox</span><span class="d">Self-hosted inference box — local
-              models and coding agents running on my own hardware, with no calls leaving the rack.</span><span
-              class="m">Linux, llama.cpp, Docker</span></a>
-          <div class="ev-item"><span class="t">Wardrive Map</span><span class="d">Wardriving captures turned into a map
-              of every network ever heard on an ESP32. Still cooking.</span><span class="m">Python, SQLite,
-              Leaflet</span></div>
-        </div>
-      </section>
-      <section class="ev-sec" id="ev-exp">
-        <h2>Experience</h2>
-        <div class="ev-list">
-          <div class="ev-item"><span class="t">Founder · Web &amp; E-commerce Engineer</span><span class="d">Run
-              riggsware, a small studio shipping storefronts and web apps for growing businesses — scope, design, build,
-              deploy and the infrastructure behind it.</span><span class="m">Riggsware · Jan 2024 — Present</span></div>
-          <div class="ev-item"><span class="t">Embedded &amp; Offensive Security R&amp;D</span><span class="d">Build
-              ESP32 firmware and hardware offensives: GhostESP for deauth testing and wardriving, DeskBuddy for the
-              desk. Break things with permission.</span><span class="m">The lab · 2023 — Present</span></div>
-          <div class="ev-item"><span class="t">Software Engineer</span><span class="d">Shipped Python backends and
-              TypeScript frontends for small business clients, and debugged production issues on Linux servers and
-              embedded hardware.</span><span class="m">Freelance / contract · 2023 — 2024</span></div>
-          <div class="ev-item"><span class="t">B.Sc. Software Engineering</span><span class="d">Studying the theory
-              behind the things already shipping in production.</span><span class="m">In progress</span></div>
-        </div>
-      </section>
-      <section class="ev-sec" id="ev-contact">
-        <h2>Contact</h2>
-        <p class="ev-intro">Open to freelance work, firmware collaborations and security engagements. Whether you have a
-          store to ship or a board to break, I'd love to hear from you.</p>
-        <p class="ev-mail"><a href="mailto:root@0xunreliable.dev">root@0xunreliable.dev</a></p>
-      </section>
-      <footer class="ev-foot">
-        <span>© 2026 0xunreliable</span>
-        <span><a href="https://github.com/0xunreliable" target="_blank" rel="noopener noreferrer">GitHub</a> · <a
-            href="https://x.com/0xunreliable" target="_blank" rel="noopener noreferrer">X</a> · <a
-            href="https://riggsware.pages.dev" target="_blank" rel="noopener noreferrer">Riggsware</a></span>
-      </footer>
-      <div class="solidarity">
-        <a href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"
-          target="_blank" rel="noopener noreferrer" aria-label="Stand with Palestine">
-          <img src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg"
-            width="155" height="20" alt="Stand with Palestine" loading="lazy" referrerpolicy="no-referrer" />
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============ DESIGN VIEW (TERM) ============ -->
-  <div class="win" id="designTerm">
-    <div class="bar">
-      <span class="tl r"></span><span class="tl y"></span><span class="tl g"></span>
-      <span class="path">0x@riggsware: ~/portfolio/designs — zsh</span>
-      <span class="right"><button class="designBackBtn">← back</button></span>
-    </div>
-    <div class="term">
-      <div class="blk in">
-        <div class="cmd"><b>ls</b> <span class="flag">-la</span> ./designs</div>
-        <div class="out">
-          <div class="h">design gallery · figma</div>
-          <div class="dim" style="margin-top:6px;margin-bottom:20px;"># interfaces and storefronts shipped through
-            riggsware — layout, type, and visual systems.</div>
-          <div class="dg-grid" id="dgGridTerm"></div>
+    <!-- ============ DESIGN VIEW (EXEC) ============ -->
+    <div id="designExec" class="exec-theme">
+      <div class="ev-wrap">
+        <nav class="ev-nav">
+          <div class="ev-logo">0xunreliable</div>
+          <div class="ev-navright">
+            <a
+              href="#"
+              class="designBackBtn"
+              style="color: var(--esoft); text-decoration: none"
+              >← back</a
+            >
+          </div>
+        </nav>
+        <header class="ev-hero" style="padding-bottom: clamp(30px, 5vw, 50px)">
+          <p class="ev-kicker">Design · Figma</p>
+          <h1>Interface &amp; product design.</h1>
+          <p class="ev-intro">
+            A selection of UI, brand and storefront designs — the visual side of
+            the work shipped through riggsware, alongside the engineering.
+          </p>
+        </header>
+        <section class="ev-sec" style="border-top: none; padding-top: 0">
+          <div class="dg-grid" id="dgGridExec"></div>
+        </section>
+        <footer class="ev-foot"><span>© 2026 0xunreliable</span></footer>
+        <div class="solidarity">
+          <a
+            href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Stand with Palestine"
+          >
+            <img
+              src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg"
+              width="155"
+              height="20"
+              alt="Stand with Palestine"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+            />
+          </a>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- ============ DESIGN VIEW (EXEC) ============ -->
-  <div id="designExec" class="exec-theme">
-    <div class="ev-wrap">
-      <nav class="ev-nav">
-        <div class="ev-logo">0xunreliable</div>
-        <div class="ev-navright"><a href="#" class="designBackBtn" style="color:var(--esoft);text-decoration:none;">←
-            back</a></div>
-      </nav>
-      <header class="ev-hero" style="padding-bottom:clamp(30px,5vw,50px);">
-        <p class="ev-kicker">Design · Figma</p>
-        <h1>Interface &amp; product design.</h1>
-        <p class="ev-intro">A selection of UI, brand and storefront designs — the visual side of the work shipped
-          through riggsware, alongside the engineering.</p>
-      </header>
-      <section class="ev-sec" style="border-top:none;padding-top:0;">
-        <div class="dg-grid" id="dgGridExec"></div>
-      </section>
-      <footer class="ev-foot"><span>© 2026 0xunreliable</span></footer>
-      <div class="solidarity">
-        <a href="https://github.com/Safouene1/support-palestine-banner/blob/master/Markdown-pages/Support.md"
-          target="_blank" rel="noopener noreferrer" aria-label="Stand with Palestine">
-          <img src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg"
-            width="155" height="20" alt="Stand with Palestine" loading="lazy" referrerpolicy="no-referrer" />
-        </a>
+    <!-- lightbox -->
+    <div class="lb" id="lb">
+      <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+      <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">
+        ‹
+      </button>
+      <img id="lbImg" src="" alt="Design" />
+      <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+      <div class="lb-count" id="lbCount"></div>
+    </div>
+
+    <div class="loader" id="loader">
+      <div class="loader-inner">
+        <pre class="loader-term" id="loaderTerm"></pre>
+        <div class="loader-clean" id="loaderClean">
+          <div class="lc-name" id="lcName">0xunreliable</div>
+          <div class="lc-bar"><i id="lcBar"></i></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- lightbox -->
-  <div class="lb" id="lb">
-    <button class="lb-close" id="lbClose" aria-label="Close">×</button>
-    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
-    <img id="lbImg" src="" alt="Design" />
-    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
-    <div class="lb-count" id="lbCount"></div>
-  </div>
-
-  <div class="loader" id="loader">
-    <div class="loader-inner">
-      <pre class="loader-term" id="loaderTerm"></pre>
-      <div class="loader-clean" id="loaderClean">
-        <div class="lc-name" id="lcName">0xunreliable</div>
-        <div class="lc-bar"><i id="lcBar"></i></div>
-      </div>
-    </div>
-  </div>
-
-  <script src="/static/js/index.js"></script>
-</body>
-
+    <script src="./static/js/index.js"></script>
+  </body>
 </html>
